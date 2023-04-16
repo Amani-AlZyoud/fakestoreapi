@@ -1,0 +1,94 @@
+body{
+  overflow-x: hidden;
+  background-image: url(images/tex.png);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #D2CBDB;
+  outline: 1px solid rgb(89, 11, 91);
+}
+
+
+.bg-image {
+  background-image: url(images/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: "Rubik";
+  font-weight: bold;
+  box-shadow: inset 0 1px 20px rgba(17, 17, 17, 0.6);
+}
+
+#logo{
+  filter: drop-shadow(0px 1px 0.0005rem rgb(0, 0, 0));
+}
+
+#h-menu {
+  background: #D2CBDB;
+}
+#nav-edit {
+  color: #000000;
+}
+
+#nav-edit:hover {
+  color: #5a5a5a;
+}
+
+#nav-edit-color {
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.6);
+}
+
+
+
+#hero-main {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(171, 167, 167, 0.6),
+  0 2px 1px rgba(171, 167, 167, 0.6),
+  0 3px 1px rgba(31, 31, 31, 0.6);
+
+}
+#hero-text{
+    color: rgb(98, 98, 99);
+}
+
+
+#hero-btn:hover{
+
+    background-color: rgba(0, 0, 0, 0.799);
+}
+
+
+
+#footer-edit {
+  color: rgb(0, 0, 0);
+  font-family: "Rubik";
+  font-weight: bold;
+}
+
+#footer-edit:hover{
+  color: #5a5a5a;
+}
+
+#footer-m {
+  border-bottom: 0.05rem rgb(89, 11, 91) solid;
+}
+
+#h-1{
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6),
+              0 2px 1px rgba(0, 0, 0, 0.6),
+              0 3px 1px rgb(0, 0, 0, 0.6);
+}
