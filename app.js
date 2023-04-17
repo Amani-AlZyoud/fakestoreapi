@@ -12,17 +12,28 @@ fetch('https://fakestoreapi.com/products')
 .then(product => getProducts(product))
 
 
-       
+ let arr;      
 // This function takes data of the "fakestoreapi" API and creates a new instance for each product using the constructor.
 function getProducts(product) {
-    product.map( (p) => {
+ arr =  product.map( (p) => {
         let productObj = new Product(p.title, p.price, p.description, p.image);
-        renderProduct(productObj);
         // console.log(productObj);
+        return productObj;
     })
 
+    getArrOfObj(arr);   
+  }
+  
+  
+  
+  function getArrOfObj(arr){
+    
+    arr.forEach(element => {
+      renderProduct(element);
+      
+  });  
+  // console.log(arr);
 }
-
 
 
 // A constructor that generates product objects which will be rendered in the main section.
